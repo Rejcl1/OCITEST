@@ -1,0 +1,194 @@
+{
+  "version": 4,
+  "terraform_version": "1.1.5",
+  "serial": 2,
+  "lineage": "c63b6f8a-71fc-7ad2-73ef-8efa76846b32",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "oci_database_db_system",
+      "name": "export_DB001065",
+      "provider": "provider[\"registry.terraform.io/hashicorp/oci\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "availability_domain": "CGcG:AP-MUMBAI-1-AD-1",
+            "backup_network_nsg_ids": null,
+            "backup_subnet_id": null,
+            "cluster_name": null,
+            "compartment_id": "ocid1.compartment.oc1..aaaaaaaauegru7qq3ugi2pudi6edswuxvxcaka4u6tqmrgrbjtow7nv4hdaa",
+            "cpu_core_count": 1,
+            "data_storage_percentage": 80,
+            "data_storage_size_in_gb": 256,
+            "database_edition": "ENTERPRISE_EDITION",
+            "db_home": [
+              {
+                "create_async": false,
+                "database": [
+                  {
+                    "admin_password": "",
+                    "backup_id": "",
+                    "backup_tde_password": "",
+                    "character_set": "AL32UTF8",
+                    "connection_strings": [
+                      {
+                        "all_connection_strings": {
+                          "cdbDefault": "db001065.sub01161726100.devvcn.oraclevcn.com:1521/DB001065_DB001065.sub01161726100.devvcn.oraclevcn.com",
+                          "cdbIpDefault": "(DESCRIPTION=(CONNECT_TIMEOUT=5)(TRANSPORT_CONNECT_TIMEOUT=3)(RETRY_COUNT=3)(ADDRESS_LIST=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.0.9)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=DB001065_DB001065.sub01161726100.devvcn.oraclevcn.com)))"
+                        },
+                        "cdb_default": "db001065.sub01161726100.devvcn.oraclevcn.com:1521/DB001065_DB001065.sub01161726100.devvcn.oraclevcn.com",
+                        "cdb_ip_default": "(DESCRIPTION=(CONNECT_TIMEOUT=5)(TRANSPORT_CONNECT_TIMEOUT=3)(RETRY_COUNT=3)(ADDRESS_LIST=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.0.9)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=DB001065_DB001065.sub01161726100.devvcn.oraclevcn.com)))"
+                      }
+                    ],
+                    "database_id": "",
+                    "database_software_image_id": "",
+                    "db_backup_config": [
+                      {
+                        "auto_backup_enabled": false,
+                        "auto_backup_window": "",
+                        "backup_destination_details": [],
+                        "recovery_window_in_days": 0
+                      }
+                    ],
+                    "db_domain": "",
+                    "db_name": "DB001065",
+                    "db_unique_name": "DB001065_DB001065",
+                    "db_workload": "OLTP",
+                    "defined_tags": {
+                      "Oracle-Tags.CreatedBy": "krishnachandrang@gmail.com",
+                      "Oracle-Tags.CreatedOn": "2022-01-30T18:40:37.752Z"
+                    },
+                    "freeform_tags": {},
+                    "id": "ocid1.database.oc1.ap-mumbai-1.anrg6ljrr5ywovqa3e3nvogzhjs4nxhges4ooquek5qiy4jobct3tmbutohq",
+                    "lifecycle_details": "",
+                    "ncharacter_set": "AL16UTF16",
+                    "pdb_name": "",
+                    "state": "AVAILABLE",
+                    "tde_wallet_password": "",
+                    "time_created": "2022-01-30 18:40:38.33 +0000 UTC",
+                    "time_stamp_for_point_in_time_recovery": ""
+                  }
+                ],
+                "database_software_image_id": "",
+                "db_home_location": "/u01/app/oracle/product/19.0.0.0/dbhome_1",
+                "db_version": "19.13.0.0.0",
+                "defined_tags": {},
+                "display_name": "dbhome20220130184038",
+                "freeform_tags": {},
+                "id": "ocid1.dbhome.oc1.ap-mumbai-1.anrg6ljr6zo7d2aao6auz6gmrdp5wjmnopsvtzyfrd7oebfol5mj54mcaraq",
+                "last_patch_history_entry_id": "",
+                "lifecycle_details": "",
+                "state": "AVAILABLE",
+                "time_created": "2022-01-30 18:40:38.327 +0000 UTC"
+              }
+            ],
+            "db_system_options": [
+              {
+                "storage_management": "ASM"
+              }
+            ],
+            "defined_tags": {
+              "Oracle-Tags.CreatedBy": "krishnachandrang@gmail.com",
+              "Oracle-Tags.CreatedOn": "2022-01-30T18:40:36.731Z"
+            },
+            "disk_redundancy": "HIGH",
+            "display_name": "DB001065",
+            "domain": "sub01161726100.devvcn.oraclevcn.com",
+            "fault_domains": [
+              "FAULT-DOMAIN-3"
+            ],
+            "freeform_tags": {},
+            "hostname": "db001065",
+            "id": "ocid1.dbsystem.oc1.ap-mumbai-1.anrg6ljrr5ywovqa6dnuz67fz77sbo3jx3ufrrsygymidwcyezlf5252hpwa",
+            "iorm_config_cache": [],
+            "kms_key_id": null,
+            "kms_key_version_id": null,
+            "last_maintenance_run_id": null,
+            "last_patch_history_entry_id": null,
+            "license_model": "LICENSE_INCLUDED",
+            "lifecycle_details": null,
+            "listener_port": 1521,
+            "maintenance_window": [],
+            "maintenance_window_details": [],
+            "next_maintenance_run_id": null,
+            "node_count": 1,
+            "nsg_ids": null,
+            "point_in_time_data_disk_clone_timestamp": null,
+            "private_ip": null,
+            "reco_storage_size_in_gb": 256,
+            "scan_dns_name": "db001065-scan.sub01161726100.devvcn.oraclevcn.com",
+            "scan_dns_record_id": "ocid1.vcndnsrecord.oc1.ap-mumbai-1.abrg6ljrcrfleqfjai4pepf7yh2ioy6g5oepg2jpsp2exlynwx5nhbikhy3a",
+            "scan_ip_ids": [],
+            "shape": "VM.Standard2.1",
+            "source": "NONE",
+            "source_db_system_id": null,
+            "sparse_diskgroup": null,
+            "ssh_public_keys": [
+              "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCA8v2w1EOXDmtzNi41wCQtw4aXpf2uNac5JP+k2NswpGu9l3RCwOQ2L8HhTsU6l2ic+nhRNFSJlZ5SVJW2xnxcUVrP6Ll79AgoYX07SvEPGX70LEv4awX6dA53oOBvQaSLMTKaHXoNT6FfVzv1R6xIHA+su02gYQZ56uJ1AX68umSw+1RUBUfXoFUsKQyFXvM06Mi/UMX4R+K19yMSFHjTKBmBOIo4Tq5fb45lLVX00CZRq1zp0XuyI5+1ela+8BAmJxFCVMU5VeY4nnVl6OO/jZKkMPO/TSNtErR5f3Nzr75ufLtwACBrqGEROeRXHPEFbIayrzqXD5QykHYuatUj rsa-key-20220116"
+            ],
+            "state": "AVAILABLE",
+            "subnet_id": "ocid1.subnet.oc1.ap-mumbai-1.aaaaaaaaxzwjuqbxqmgkcs4mip3joks6sqccoid6u2ovqkp64kfego27gvaq",
+            "time_created": "2022-01-30 18:40:38.306 +0000 UTC",
+            "time_zone": "UTC",
+            "timeouts": {
+              "create": null,
+              "delete": null,
+              "update": null
+            },
+            "version": "19.13.0.0.0",
+            "vip_ids": [],
+            "zone_id": "ocid1.dns-zone.oc1.ap-mumbai-1.aaaaaaaakvhergbs7nybt3zmekaqbgcfjb4rlywg5cnrcaedxdbadem5pc7a"
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo3MjAwMDAwMDAwMDAwLCJkZWxldGUiOjcyMDAwMDAwMDAwMDAsInVwZGF0ZSI6NzIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMCJ9"
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "oci_database_pluggable_database",
+      "name": "export_pluggable_database_1",
+      "provider": "provider[\"registry.terraform.io/hashicorp/oci\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "compartment_id": "ocid1.compartment.oc1..aaaaaaaauegru7qq3ugi2pudi6edswuxvxcaka4u6tqmrgrbjtow7nv4hdaa",
+            "connection_strings": [
+              {
+                "all_connection_strings": {
+                  "pdbDefault": "db001065.sub01161726100.devvcn.oraclevcn.com:1521/DB001065_pdb1.sub01161726100.devvcn.oraclevcn.com",
+                  "pdbIpDefault": "(DESCRIPTION=(CONNECT_TIMEOUT=5)(TRANSPORT_CONNECT_TIMEOUT=3)(RETRY_COUNT=3)(ADDRESS_LIST=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.0.9)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=DB001065_pdb1.sub01161726100.devvcn.oraclevcn.com)))"
+                },
+                "pdb_default": "db001065.sub01161726100.devvcn.oraclevcn.com:1521/DB001065_pdb1.sub01161726100.devvcn.oraclevcn.com",
+                "pdb_ip_default": "(DESCRIPTION=(CONNECT_TIMEOUT=5)(TRANSPORT_CONNECT_TIMEOUT=3)(RETRY_COUNT=3)(ADDRESS_LIST=(LOAD_BALANCE=on)(ADDRESS=(PROTOCOL=TCP)(HOST=10.0.0.9)(PORT=1521)))(CONNECT_DATA=(SERVICE_NAME=DB001065_pdb1.sub01161726100.devvcn.oraclevcn.com)))"
+              }
+            ],
+            "container_database_id": "ocid1.database.oc1.ap-mumbai-1.anrg6ljrr5ywovqa3e3nvogzhjs4nxhges4ooquek5qiy4jobct3tmbutohq",
+            "defined_tags": {},
+            "freeform_tags": {},
+            "id": "ocid1.pluggabledatabase.oc1.ap-mumbai-1.anrg6ljrr5ywovqaeec6o7iqr2igdn44jfkb22kv3xejqrvpy63dyzkhqx7q",
+            "is_restricted": null,
+            "lifecycle_details": null,
+            "open_mode": "READ_WRITE",
+            "pdb_admin_password": null,
+            "pdb_name": "DB001065_pdb1",
+            "should_pdb_admin_account_be_locked": null,
+            "state": "AVAILABLE",
+            "tde_wallet_password": null,
+            "time_created": "2022-01-30 18:50:25.859 +0000 UTC",
+            "timeouts": {
+              "create": null,
+              "delete": null,
+              "update": null
+            }
+          },
+          "sensitive_attributes": [],
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjoxMjAwMDAwMDAwMDAwLCJkZWxldGUiOjEyMDAwMDAwMDAwMDAsInVwZGF0ZSI6MTIwMDAwMDAwMDAwMH0sInNjaGVtYV92ZXJzaW9uIjoiMCJ9"
+        }
+      ]
+    }
+  ]
+}
