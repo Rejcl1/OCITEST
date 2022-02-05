@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Teraform Plan') {
+      steps {
+        sh '/usr/bin/terraform -plan'
+      }
+    }
+
   }
 }
