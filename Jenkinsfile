@@ -9,7 +9,7 @@ pipeline {
 
     stage('Terraform Init') {
       steps {
-        sh '/usr/bin/terraform -init'
+        sh '/usr/bin/terraform init'
       }
     }
 
