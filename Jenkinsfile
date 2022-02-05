@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Apply') {
+      steps {
+        sh '/usr/bin/terraform apply'
+      }
+    }
+
   }
 }
